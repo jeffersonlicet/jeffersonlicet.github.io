@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
+<!--===============================================================================================-->
+	<script src="https://connect-js-stg.directa24.com/directa24.js"></script>
+</head>
+<body>
+
+	<div class="contact1">
+		<div style="width: 100%">
+		<img src="https://resources.directa24.com/misc/logo/directa-logo-crop.png" style="max-width: 200px;max-height: 100px;">
+		</div>
+		<div id='main'></div>
+        <script>
+            const param = {
+            	amount: 100,
+            	currency: 'USD',
+            	lang: 'EN',
+            	payerData: {
+            		payerFirstName: 'FirstName',
+            		payerLastName: 'LastName',
+            		payerEmail: 'payerEmail@test.com'
+            	},
+				url: 'https://directa24-js.com/deposit',
+				country: 'BR',
+            }
+            let directaLib1 = directa24('EKiFOWiHnI', param);
+            window.onload =  directaLib1.init( document.getElementById('main'), 'grid');
+            </script>
+	</div>
+
+</body>
+</html>

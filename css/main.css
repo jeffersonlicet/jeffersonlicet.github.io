@@ -10,7 +10,7 @@ body, html {
 }
 
 #main{
-  width: 80%;
+  width: 30%;
 }
 
 .contact1 {
@@ -18,11 +18,7 @@ body, html {
   min-height: 100%;
   padding: 15px;
   text-align: center;
-  background: #009bff;
-  background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
-  background: -o-linear-gradient(left, #0072ff, #00c6ff);
-  background: -moz-linear-gradient(left, #0072ff, #00c6ff);
-  background: linear-gradient(left, #0072ff, #00c6ff);
+  background: 'white';
 
   display: -webkit-box;
   display: -webkit-flex;
